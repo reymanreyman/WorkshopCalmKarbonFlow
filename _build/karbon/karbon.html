@@ -1,0 +1,904 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Karbon</title>
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Glossary" href="../appendix/glossary.html" />
+    <link rel="prev" title="Kalm: WordPress Blueprint (Kubernetes)" href="../kalm_wordpress_blueprint/kalm_wordpress_blueprint.html" />
+
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  </head><body>
+
+  <div id="navbar" class="navbar-inverse navbar-default ">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html"><span><img src="../_static/NutanixWorkshops.svg"></span>
+           </a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html"> <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Technology Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../what_is_nutanix/what_is_nutanix.html">What is Nutanix</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../what_is_nutanix/what_is_nutanix.html#what-is-nutanix-enterprise-os">What is Nutanix Enterprise OS?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_nutanix/what_is_nutanix.html#streamlining-the-datacenter">Streamlining The Datacenter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_nutanix/what_is_nutanix.html#nutanix-web-scale-architecture">Nutanix Web-Scale Architecture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_nutanix/what_is_nutanix.html#the-nutanix-solution">The Nutanix Solution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_nutanix/what_is_nutanix.html#prism-central-management">Prism Central Management</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Nutanix Calm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../what_is_calm/what_is_calm.html">What Is Calm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../what_is_calm/what_is_calm.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../what_is_calm/what_is_calm.html#what-is-the-state-of-things-today">What is the State of Things Today</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_calm/what_is_calm.html#managing-apps-is-increasingly-challenging">Managing Apps Is Increasingly Challenging</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../what_is_calm/what_is_calm.html#how-does-nutanix-solve-this-problem">How Does Nutanix Solve This Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_calm/what_is_calm.html#foundation-for-enterprise-cloud">Foundation For Enterprise Cloud</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_calm/what_is_calm.html#delivering-the-enterprise-cloud-vision">Delivering the Enterprise Cloud Vision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_calm/what_is_calm.html#self-service-and-governance">Self-Service and Governance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../what_is_calm/what_is_calm.html#marketplace">Marketplace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../what_is_calm/what_is_calm.html#partners">Partners</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../what_is_calm/what_is_calm.html#user-case-1-self-service-app-provisioning">User Case 1: Self-Service App Provisioning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../what_is_calm/what_is_calm.html#user-case-2-self-service-via-servicenow-calm">User Case 2: Self-Service via ServiceNow &amp; Calm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../what_is_calm/what_is_calm.html#role-based-access-control">Role-Based Access Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../what_is_calm/what_is_calm.html#end-to-end-audits">End-to-End Audits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../what_is_calm/what_is_calm.html#on-prem-resource-cost">On-Prem Resource Cost</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_calm/what_is_calm.html#application-lifecycle-management">Application Lifecycle Management</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../what_is_calm/what_is_calm.html#calm-blueprints">Calm Blueprints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../what_is_calm/what_is_calm.html#kubernetes-with-calm">Kubernetes with Calm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../what_is_calm/what_is_calm.html#use-case-3-application-life-cycle-management">Use Case 3: Application Life Cycle Management</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../what_is_calm/what_is_calm.html#use-case-4-ci-cd-using-calm-and-jenkins">Use Case 4: CI/CD using Calm and Jenkins</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_calm/what_is_calm.html#multi-cloud-orchestration">Multi-Cloud Orchestration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../what_is_calm/what_is_calm.html#define-apps-once-use-everywhere-with-profiles">Define Apps Once, Use Everywhere with Profiles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../what_is_calm/what_is_calm.html#compare-cloud-costs-and-predict-future-spend">Compare Cloud Costs and Predict Future Spend</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../what_is_calm/what_is_calm.html#takeaways">Takeaways</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../calm_basics/basics.html">Calm Basics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../calm_basics/basics.html#accessing-calm">Accessing Calm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_basics/basics.html#tabbed-navigation">Tabbed Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_basics/basics.html#blueprint-editor">Blueprint Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_basics/basics.html#glossary">Glossary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../calm_basics/basics.html#project">Project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_basics/basics.html#blueprint">Blueprint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_basics/basics.html#id2">Blueprint Editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_basics/basics.html#service">Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_basics/basics.html#pod">Pod</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_basics/basics.html#action">Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_basics/basics.html#application-profile">Application Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_basics/basics.html#dependency">Dependency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_basics/basics.html#macro">Macro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_basics/basics.html#application">Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_basics/basics.html#application-overview">Application Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_basics/basics.html#task-library">Task Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_basics/basics.html#marketplace">Marketplace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_basics/basics.html#takeaways">Takeaways</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Nutanix Calm Lab</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../calm_projects/calm_projects.html">Calm: Projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../calm_projects/calm_projects.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_projects/calm_projects.html#creating-a-project">Creating A Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_projects/calm_projects.html#takeaways">Takeaways</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../calm_sshkey_creation/calm_sshkey_creation.html">Calm: SSH Key Creation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../calm_sshkey_creation/calm_sshkey_creation.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_sshkey_creation/calm_sshkey_creation.html#macos-linux">MacOS / Linux</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../calm_sshkey_creation/calm_sshkey_creation.html#ssh-key-creation">SSH Key Creation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_sshkey_creation/calm_sshkey_creation.html#accessing-the-private-key">Accessing the Private Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_sshkey_creation/calm_sshkey_creation.html#accessing-the-public-key">Accessing the Public Key</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_sshkey_creation/calm_sshkey_creation.html#windows">Windows</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../calm_sshkey_creation/calm_sshkey_creation.html#id1">SSH Key Creation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_sshkey_creation/calm_sshkey_creation.html#id2">Accessing the Private Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_sshkey_creation/calm_sshkey_creation.html#id3">Accessing the Public Key</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_sshkey_creation/calm_sshkey_creation.html#takeaways">Takeaways</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../calm_singlevm_blueprint/calm_singlevm_blueprint.html">Calm: Single VM Blueprint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../calm_singlevm_blueprint/calm_singlevm_blueprint.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_singlevm_blueprint/calm_singlevm_blueprint.html#creating-single-vm-blueprint-centos">Creating Single VM Blueprint (CentOS)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../calm_singlevm_blueprint/calm_singlevm_blueprint.html#creating-blueprint">Creating Blueprint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_singlevm_blueprint/calm_singlevm_blueprint.html#blueprint-settings">Blueprint Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_singlevm_blueprint/calm_singlevm_blueprint.html#vm-details">VM Details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_singlevm_blueprint/calm_singlevm_blueprint.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_singlevm_blueprint/calm_singlevm_blueprint.html#vm-configuration">VM Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_singlevm_blueprint/calm_singlevm_blueprint.html#launching-the-blueprint">Launching the Blueprint</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_singlevm_blueprint/calm_singlevm_blueprint.html#takeaways">Takeaways</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../calm_mysql_blueprint/calm_mysql_blueprint.html">Calm: MySQL Blueprint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../calm_mysql_blueprint/calm_mysql_blueprint.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_mysql_blueprint/calm_mysql_blueprint.html#creating-blueprint-mysql">Creating Blueprint (MySQL)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../calm_mysql_blueprint/calm_mysql_blueprint.html#setting-variables">Setting Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_mysql_blueprint/calm_mysql_blueprint.html#adding-a-downloadable-image">Adding a Downloadable Image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_mysql_blueprint/calm_mysql_blueprint.html#adding-db-service">Adding DB Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_mysql_blueprint/calm_mysql_blueprint.html#launching-the-blueprint">Launching the Blueprint</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_mysql_blueprint/calm_mysql_blueprint.html#takeaways">Takeaways</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../calm_3twa_blueprint/calm_3twa_blueprint.html">Calm: 3TWA Blueprint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../calm_3twa_blueprint/calm_3twa_blueprint.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_3twa_blueprint/calm_3twa_blueprint.html#calm-blueprint-3twa">Calm Blueprint (3TWA)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../calm_3twa_blueprint/calm_3twa_blueprint.html#creating-the-web-server">Creating the Web Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_3twa_blueprint/calm_3twa_blueprint.html#adding-dependencies">Adding Dependencies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_3twa_blueprint/calm_3twa_blueprint.html#adding-replicas">Adding Replicas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_3twa_blueprint/calm_3twa_blueprint.html#creating-the-load-balancer">Creating the Load Balancer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_3twa_blueprint/calm_3twa_blueprint.html#scale-out">Scale Out</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_3twa_blueprint/calm_3twa_blueprint.html#scale-in">Scale In</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_3twa_blueprint/calm_3twa_blueprint.html#launching-and-managing-the-application">Launching and Managing the Application</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_3twa_blueprint/calm_3twa_blueprint.html#takeaways">Takeaways</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../calm_marketplace/calm_marketplace.html">Calm: Marketplace</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../calm_marketplace/calm_marketplace.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_marketplace/calm_marketplace.html#calm-marketplace-part-1">Calm Marketplace Part 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../calm_marketplace/calm_marketplace.html#publishing-blueprints-from-marketplace-manager">Publishing Blueprints from Marketplace Manager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_marketplace/calm_marketplace.html#cloning-blueprints-from-marketplace">Cloning Blueprints from Marketplace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_marketplace/calm_marketplace.html#editing-cloned-blueprint">Editing Cloned Blueprint</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_marketplace/calm_marketplace.html#calm-marketplace-part-2">Calm Marketplace Part 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../calm_marketplace/calm_marketplace.html#publishing-blueprints">Publishing Blueprints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_marketplace/calm_marketplace.html#approving-blueprints">Approving Blueprints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_marketplace/calm_marketplace.html#configuring-project-environment">Configuring Project Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_marketplace/calm_marketplace.html#launching-blueprint-from-the-marketplace">Launching Blueprint from the Marketplace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_marketplace/calm_marketplace.html#takeaways">Takeaways</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Optional Flow Lab</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../what_is_flow/what_is_flow.html">What Is Flow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../what_is_flow/what_is_flow.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../what_is_flow/what_is_flow.html#what-is-the-state-of-things-today">What is the State of Things Today</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_flow/what_is_flow.html#why-microsegmentation">Why Microsegmentation?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_flow/what_is_flow.html#securing-hci-with-flow-microsegmentation">Securing HCI with Flow + Microsegmentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_flow/what_is_flow.html#flow-under-the-hood">Flow: Under the hood</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_flow/what_is_flow.html#why-flow">Why Flow?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_flow/what_is_flow.html#use-case-app-segmentation">Use Case: App Segmentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_flow/what_is_flow.html#use-case-vdi-microsegmentation">Use Case: VDI Microsegmentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_flow/what_is_flow.html#use-case-network-security-automation">Use Case: Network &amp; Security Automation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_flow/what_is_flow.html#isolation-policy">Isolation Policy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_flow/what_is_flow.html#application-security-policy">Application Security Policy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../what_is_flow/what_is_flow.html#quarantine-policy">Quarantine Policy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../flow_enable/flow_enable.html">Flow: Enable and Lab Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../flow_enable/flow_enable.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flow_enable/flow_enable.html#enabling-microsegmentation">Enabling Microsegmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flow_enable/flow_enable.html#create-five-vms">Create Five VMs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../flow_enable/flow_enable.html#clone-the-other-four-vms">Clone the other four VMs:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../flow_enable/flow_enable.html#takeaways">Takeaways</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../flow_quarantine_vm/flow_quarantine_vm.html">Flow: Quarantine VM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../flow_quarantine_vm/flow_quarantine_vm.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flow_quarantine_vm/flow_quarantine_vm.html#quarantine-a-vm-and-explore-the-quarantine-policy">Quarantine a VM and Explore the Quarantine Policy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../flow_quarantine_vm/flow_quarantine_vm.html#confirm-communication-between-flow-abc-1-and-flow-abc-2">Confirm Communication between flow-abc-1 and flow-abc-2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../flow_quarantine_vm/flow_quarantine_vm.html#quarantine-a-vm-and-edit-the-quarantine-policy">Quarantine a VM and Edit The Quarantine Policy</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../flow_quarantine_vm/flow_quarantine_vm.html#takeaways">Takeaways</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../flow_isolate_environments/flow_isolate_environments.html">Flow: Isolate Environments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../flow_isolate_environments/flow_isolate_environments.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flow_isolate_environments/flow_isolate_environments.html#isolate-environments-with-flow">Isolate Environments with Flow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../flow_isolate_environments/flow_isolate_environments.html#create-a-new-category">Create a New Category</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../flow_isolate_environments/flow_isolate_environments.html#create-a-new-security-policy">Create a New Security Policy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../flow_isolate_environments/flow_isolate_environments.html#apply-the-new-security-policy">Apply the New Security Policy</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../flow_isolate_environments/flow_isolate_environments.html#confirm-communication-is-possible-before-applying-the-categories-to-the-vms">Confirm communication is possible before applying the categories to the VMs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../flow_isolate_environments/flow_isolate_environments.html#assign-a-category-to-the-vms-flow-abc-3-and-flow-abc-4">Assign a category to the VMs flow-abc-3 and flow-abc-4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../flow_isolate_environments/flow_isolate_environments.html#confirm-communication-is-not-possible-after-applying-the-categories-to-the-vms">Confirm communication is NOT possible after applying the categories to the VMs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../flow_isolate_environments/flow_isolate_environments.html#takeaways">Takeaways</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../flow_secure_app/flow_secure_app.html">Flow: Secure App</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../flow_secure_app/flow_secure_app.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flow_secure_app/flow_secure_app.html#secure-applications-with-microsegmentation">Secure Applications with Microsegmentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../flow_secure_app/flow_secure_app.html#create-and-assign-categories">Create and Assign Categories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../flow_secure_app/flow_secure_app.html#update-apptype-with-new-category-value-app-abc">Update <strong>AppType</strong> with New Category Value <strong>app-abc</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../flow_secure_app/flow_secure_app.html#assign-vm-flow-abc-5-to-the-category-apptype-app-abc">Assign VM <strong>flow-abc-5</strong> to the category <strong>AppType: app-abc</strong>.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../flow_secure_app/flow_secure_app.html#assign-vm-flow-abc-1-the-default-category-environment-dev">Assign VM <strong>flow-abc-1</strong> the default category <strong>Environment: Dev</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../flow_secure_app/flow_secure_app.html#secure-the-application-vm">Secure the Application VM</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../flow_secure_app/flow_secure_app.html#create-a-new-security-policy-to-protect-the-app-abc-application">Create a new security policy to protect the <strong>app-abc</strong> application.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../flow_secure_app/flow_secure_app.html#takeaways">Takeaways</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../flow_visualization/flow_visualization.html">Flow: Visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../flow_visualization/flow_visualization.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flow_visualization/flow_visualization.html#id2">Flow Visualization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../flow_visualization/flow_visualization.html#add-flows-to-a-policy-using-flow-visualization">Add Flows to a Policy Using Flow Visualization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../flow_visualization/flow_visualization.html#view-the-detected-traffic-flows-from-environment-dev">View the detected traffic flows from Environment: Dev</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../flow_visualization/flow_visualization.html#add-the-detected-flow-to-the-security-policy">Add The Detected Flow to The Security Policy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../flow_visualization/flow_visualization.html#move-policy-from-monitoring-mode-to-applied-mode">Move Policy from <strong>Monitoring</strong> Mode to <strong>Applied</strong> Mode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../flow_visualization/flow_visualization.html#takeaways">Takeaways</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Optional Labs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../calm_enable/calm_enable.html">Calm: Enable</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../calm_enable/calm_enable.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_enable/calm_enable.html#enabling-app-management">Enabling App Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_enable/calm_enable.html#adding-active-directory">Adding Active Directory</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../calm_windows_blueprint/calm_windows_blueprint.html">Calm: Windows Blueprint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../calm_windows_blueprint/calm_windows_blueprint.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_windows_blueprint/calm_windows_blueprint.html#creating-blueprint-windows">Creating Blueprint (Windows)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../calm_windows_blueprint/calm_windows_blueprint.html#creating-blueprint">Creating Blueprint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_windows_blueprint/calm_windows_blueprint.html#setting-variables">Setting Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_windows_blueprint/calm_windows_blueprint.html#adding-windows-service">Adding Windows Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_windows_blueprint/calm_windows_blueprint.html#package-install">Package Install</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_windows_blueprint/calm_windows_blueprint.html#package-uninstall">Package Uninstall</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_windows_blueprint/calm_windows_blueprint.html#blueprint-launch-and-verification">Blueprint Launch and Verification</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../calm_windows_blueprint/calm_windows_blueprint.html#launching-the-blueprint">Launching the Blueprint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../calm_windows_blueprint/calm_windows_blueprint.html#verification">Verification</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../calm_windows_blueprint/calm_windows_blueprint.html#takeaways">Takeaways</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../kalm_wordpress_blueprint/kalm_wordpress_blueprint.html">Kalm: WordPress Blueprint (Kubernetes)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../kalm_wordpress_blueprint/kalm_wordpress_blueprint.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kalm_wordpress_blueprint/kalm_wordpress_blueprint.html#adding-kubernetes-provider">Adding Kubernetes provider</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kalm_wordpress_blueprint/kalm_wordpress_blueprint.html#enabling-kubernetes-on-project">Enabling Kubernetes on project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kalm_wordpress_blueprint/kalm_wordpress_blueprint.html#importing-blueprint-wordpress">Importing Blueprint (WordPress)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kalm_wordpress_blueprint/kalm_wordpress_blueprint.html#configuring-blueprint-wordpress">Configuring Blueprint (WordPress)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../kalm_wordpress_blueprint/kalm_wordpress_blueprint.html#setting-variables">Setting Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kalm_wordpress_blueprint/kalm_wordpress_blueprint.html#setting-pod-deployment-account">Setting Pod Deployment Account</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kalm_wordpress_blueprint/kalm_wordpress_blueprint.html#launching-the-blueprint">Launching the Blueprint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kalm_wordpress_blueprint/kalm_wordpress_blueprint.html#scaling-out-wordpress">Scaling out WordPress</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../kalm_wordpress_blueprint/kalm_wordpress_blueprint.html#takeaways">Takeaways</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Karbon 1.0</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Karbon</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-karbon-cluster">Creating a Karbon Cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started-with-kubectl">Getting Started with Kubectl</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cluster-and-client-version">Cluster and client version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cluster-info">Cluster info</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-pods">Running pods</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#deploying-an-application">Deploying an Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accessing-wordpress">Accessing Wordpress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exploring-logging-visualization">Exploring Logging &amp; Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coming-soon">Coming Soon!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#takeaways">Takeaways</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#additional-kubernetes-training-resources">Additional Kubernetes Training Resources</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/glossary.html">Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../appendix/glossary.html#nutanix-core">Nutanix Core</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/glossary.html#aos">AOS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/glossary.html#pulse">Pulse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/glossary.html#prism-element">Prism Element</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/glossary.html#prism-central">Prism Central</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/glossary.html#node">Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/glossary.html#block">Block</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/glossary.html#storage-pool">Storage Pool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/glossary.html#storage-container">Storage Container</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/glossary.html#anatomy-of-a-read-i-o">Anatomy of a Read I/O</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/glossary.html#anatomy-of-a-write-i-o">Anatomy of a Write I/O</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><p class="caption"><span class="caption-text">Technology Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../what_is_nutanix/what_is_nutanix.html">What is Nutanix</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Nutanix Calm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../what_is_calm/what_is_calm.html">What Is Calm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../calm_basics/basics.html">Calm Basics</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Nutanix Calm Lab</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../calm_projects/calm_projects.html">Calm: Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../calm_sshkey_creation/calm_sshkey_creation.html">Calm: SSH Key Creation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../calm_singlevm_blueprint/calm_singlevm_blueprint.html">Calm: Single VM Blueprint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../calm_mysql_blueprint/calm_mysql_blueprint.html">Calm: MySQL Blueprint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../calm_3twa_blueprint/calm_3twa_blueprint.html">Calm: 3TWA Blueprint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../calm_marketplace/calm_marketplace.html">Calm: Marketplace</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Optional Flow Lab</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../what_is_flow/what_is_flow.html">What Is Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flow_enable/flow_enable.html">Flow: Enable and Lab Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flow_quarantine_vm/flow_quarantine_vm.html">Flow: Quarantine VM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flow_isolate_environments/flow_isolate_environments.html">Flow: Isolate Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flow_secure_app/flow_secure_app.html">Flow: Secure App</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flow_visualization/flow_visualization.html">Flow: Visualization</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Optional Labs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../calm_enable/calm_enable.html">Calm: Enable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../calm_windows_blueprint/calm_windows_blueprint.html">Calm: Windows Blueprint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kalm_wordpress_blueprint/kalm_wordpress_blueprint.html">Kalm: WordPress Blueprint (Kubernetes)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Karbon 1.0</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Karbon</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-karbon-cluster">Creating a Karbon Cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started-with-kubectl">Getting Started with Kubectl</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cluster-and-client-version">Cluster and client version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cluster-info">Cluster info</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-pods">Running pods</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#deploying-an-application">Deploying an Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accessing-wordpress">Accessing Wordpress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exploring-logging-visualization">Exploring Logging &amp; Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coming-soon">Coming Soon!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#takeaways">Takeaways</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#additional-kubernetes-training-resources">Additional Kubernetes Training Resources</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/glossary.html">Glossary</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-9 content" role="main">
+      
+  <div class="section" id="karbon">
+<span id="id1"></span><h1>Karbon<a class="headerlink" href="#karbon" title="Permalink to this headline">¶</a></h1>
+<p><em>The estimated time to complete this lab is 60 minutes.</em></p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Nutanix Karbon is an on-prem turnkey curated enterprise-grade Kubernetes service offering that simplifies the provisioning, operations and lifecycle management of Kubernetes.</p>
+<p>Karbon provides a consumer-grade experience for delivering Kubernetes on-prem providing huge savings on OpEx of dedicated DevOps or SRE teams to keep Kubernetes online, up to date or integrated with 3rd party components and tooling.</p>
+<p><strong>In this lab you will deploy a Kubernetes cluster using Karbon and then deploy multiple containers, referred to as Kubernetes pods, to run a sample application.</strong></p>
+</div>
+<div class="section" id="creating-a-karbon-cluster">
+<h2>Creating a Karbon Cluster<a class="headerlink" href="#creating-a-karbon-cluster" title="Permalink to this headline">¶</a></h2>
+<p>In this exercise you will create a development Kubernetes cluster with Nutanix Karbon.</p>
+<ol class="arabic">
+<li><p class="first">In <strong>Prism Central</strong>, select <em class="fa fa-bars"></em> <strong>&gt; Services &gt; Karbon</strong>.</p>
+<div class="figure">
+<img alt="../_images/karbon_create_cluster_0.png" src="../_images/karbon_create_cluster_0.png" />
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>If Karbon has not already been enabled on your cluster, click the <strong>Enable Karbon</strong> button when prompted. Once clicked, the process should take approximately 2 minutes to complete. During this time Prism Central is deploying the Karbon control plane, which runs as a set of containers within the Prism Central VM.</p>
+<div class="last figure">
+<img alt="../_images/2.png" src="../_images/2.png" />
+</div>
+</div>
+</li>
+<li><p class="first">Click the provided link to launch the <strong>Karbon Console</strong>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If at any point your Karbon session times out, you can log in again using your Prism Central <strong>admin</strong> credentials.</p>
+</div>
+</li>
+<li><p class="first">To begin provisioning a Karbon cluster, click <strong>+ Create Cluster</strong>.</p>
+</li>
+<li><p class="first">Select <strong>Development Cluster</strong> and click <strong>Next</strong>.</p>
+<div class="figure">
+<img alt="../_images/02.png" src="../_images/02.png" />
+</div>
+</li>
+<li><p class="first">On the <strong>Name and Environment</strong> tab, fill out the following fields:</p>
+<ul class="simple">
+<li><strong>Name</strong> - <em>Initials</em>-karbon</li>
+<li><strong>Cluster</strong> - Select <em>Your Nutanix cluster</em></li>
+<li><strong>Kubernetes Version</strong> - 1.13.4</li>
+<li><strong>Host OS Image</strong> - centos7.5.1804-ntnx-0.0</li>
+</ul>
+<div class="figure">
+<img alt="../_images/3.png" src="../_images/3.png" />
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Your cluster has been pre-staged with a compatible CentOS image for use with Karbon.</p>
+<p class="last">Karbon currently supports CentOS 7.5.1804 and requires that the image be downloaded directly from Karbon <strong>OS Images</strong>.</p>
+</div>
+</li>
+<li><p class="first">Click <strong>Next</strong>.</p>
+<p>Next you will define the number of container host VMs and compute requirements, starting with <strong>Worker</strong> VMs.</p>
+<p>Worker nodes are responsible for running containers deployed onto the Kubernetes cluster. Each Worker node runs the <a class="reference external" href="https://kubernetes.io/docs/admin/kubelet/">kubelet</a> and <a class="reference external" href="https://kubernetes.io/docs/admin/kube-proxy/">kube-proxy</a> services.</p>
+</li>
+<li><p class="first">On the <strong>Node Configuration</strong> tab, fill out the following fields:</p>
+<ul class="simple">
+<li><strong>VM Network</strong> - Secondary</li>
+<li><strong>Number of Workers</strong> - 2 (Default 1)</li>
+<li><strong>Memory</strong> - 12 GiB (Default 8)</li>
+<li><strong>Size</strong> - 120 GiB (Default)</li>
+<li><strong>VCPU</strong> - 4 (Default)</li>
+</ul>
+<div class="figure">
+<img alt="../_images/4.png" src="../_images/4.png" />
+</div>
+</li>
+<li><p class="first">Click <strong>Next</strong>.</p>
+<p>Next you will configure the networking for the pods. Karbon utilizes <a class="reference external" href="https://github.com/coreos/flannel#flannel">Flannel</a> to provide layer 3 IPv4 network between multiple nodes within the Kubernetes cluster.</p>
+<p>Platforms like Kubernetes assume that each pod (container) has a unique, routable IP inside the cluster. The advantage of this model is that it removes the port mapping complexities that come from sharing a single host IP.</p>
+<p>The <strong>Service CIDR</strong> defines the network range on which services (like etcd) are exposed. The <strong>Pod CIDR</strong> defines the network range used to IP pods. The default configuration allows for a maximum of 256 nodes with up to 256 pods per node.</p>
+</li>
+<li><p class="first">On the <strong>Network</strong> tab, fill out the following fields:</p>
+<ul class="simple">
+<li><strong>Network Provider</strong> - Flannel (Default)</li>
+<li><strong>Service CIDR</strong> - 172.19.0.0/16 (Default)</li>
+<li><strong>Pod CIDR</strong> - 172.20.0.0/16 (Default)</li>
+</ul>
+<div class="figure">
+<img alt="../_images/6.png" src="../_images/6.png" />
+</div>
+</li>
+<li><p class="first">Click <strong>Next</strong>.</p>
+</li>
+<li><p class="first">On the <strong>Storage Class</strong> tab, fill out the following fields:</p>
+<ul class="simple">
+<li><strong>Storage Class Name</strong> - default-storageclass-<em>Initials</em></li>
+<li><strong>Prism Element Cluster</strong> - <em>Your Nutanix cluster</em></li>
+<li><strong>Nutanix Cluster Username</strong> - admin</li>
+<li><strong>Nutanix Cluster Password</strong> - <em>Your password</em></li>
+<li><strong>Storage Container Name</strong> - default-container-xyz</li>
+<li><strong>Reclaim Policy</strong> - Delete</li>
+<li><strong>File System</strong> - ext4 (Default)</li>
+</ul>
+<div class="figure">
+<img alt="../_images/7.png" src="../_images/7.png" />
+</div>
+</li>
+<li><p class="first">Click <strong>Create</strong>.</p>
+<p>Deployment of the cluster should take approximately 10 minutes. During this time, Karbon is pulling images from public image repositories for the <strong>master</strong>, <strong>etcd</strong>, and <strong>worker</strong> nodes, as well as <strong>flannel</strong>, the Nutanix Volumes plugin, and any additional Karbon plugins. Support for authenticated proxy and dark site image repositories will be added post-GA.</p>
+<p>Filtering VMs for <em>Initials</em><strong>-karbon</strong> in <strong>Prism Central</strong> will display the master, etcd, and worker VMs provisioned by Karbon.</p>
+<div class="figure">
+<img alt="../_images/8.png" src="../_images/8.png" />
+</div>
+<p>In <strong>Prism Element &gt; Storage &gt; Volume Group</strong>, Karbon has created the <strong>pvc-…</strong> Volume Group, used as persistent storage for logging. Karbon leverages the Nutanix Kubernetes Volume Plug-In to present Nutanix Volumes to Kubernetes pods via iSCSI. This allows containers to take advantage of native Nutanix storage capabilities such as thin provisioning, zero suppression, compression, and more.</p>
+<div class="figure">
+<img alt="../_images/9.png" src="../_images/9.png" />
+</div>
+<p>The Karbon cluster has finished provisioning when the <strong>Status</strong> of the cluster is <strong>Running</strong>.</p>
+<div class="figure">
+<img alt="../_images/10.png" src="../_images/10.png" />
+</div>
+</li>
+<li><p class="first">Click on your cluster name (<em>Initials</em><strong>-karbon</strong>) to access the Summary Page for your cluster.</p>
+<div class="figure">
+<img alt="../_images/11.png" src="../_images/11.png" />
+</div>
+</li>
+<li><p class="first">Explore this view and note the ability to create and add additional storage classes and persistent storage volumes to the cluster.</p>
+<p>Additional persistent storage volumes could be leveraged for use cases such as containerized databases.</p>
+<p>You can scale-out your Kubernetes cluster with more worker nodes when needed.</p>
+</li>
+</ol>
+<p>In 15 minutes or less, you have deployed a production-ready Kubernetes cluster with logging (EFK), networking (flannel), and persistent storage services.</p>
+</div>
+<div class="section" id="getting-started-with-kubectl">
+<h2>Getting Started with Kubectl<a class="headerlink" href="#getting-started-with-kubectl" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://kubernetes.io/docs/reference/kubectl/overview/">Kubectl</a> is the  command line interface for running commands against Kubernetes clusters. <a class="reference external" href="https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/">Kubeconfig</a> files contain information about clusters, users, namespaces, and authentication. The <code class="docutils literal notranslate"><span class="pre">kubectl</span></code> tool uses <strong>kubeconfig</strong> files to find and communicate with a Kubernetes cluster.</p>
+<p>In this exercise you will use <code class="docutils literal notranslate"><span class="pre">kubectl</span></code> to perform basic operations against your newly provisioned Karbon cluster.</p>
+<ol class="arabic">
+<li><p class="first">Select your <em>Initials</em><strong>-karbon</strong> cluster and click <strong>Actions</strong> &gt; <strong>Kubeconfig</strong>.</p>
+<div class="figure">
+<img alt="../_images/12.png" src="../_images/12.png" />
+</div>
+</li>
+<li><p class="first">Copy the kubeconfig file you have downloaded to your Docker virtual machine using WinSCP or SCP. With the <code class="docutils literal notranslate"><span class="pre">centos</span></code> user copy the file remotely to <code class="docutils literal notranslate"><span class="pre">~/.kube/config</span></code></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>If installed, you can also use a local instance of <code class="docutils literal notranslate"><span class="pre">kubectl</span></code>. The Docker VM is provided to ensure a consistent experience.</p>
+<p class="last">Instructions for setting up <code class="docutils literal notranslate"><span class="pre">kubectl</span></code> in Windows and macOS can be found <a class="reference external" href="https://kubernetes.io/docs/tasks/tools/install-kubectl/">here</a>.</p>
+</div>
+</li>
+<li><p class="first">From the Docker VM, run the following commands to test <code class="docutils literal notranslate"><span class="pre">kubectl</span></code>:</p>
+<div class="highlight-Shell notranslate"><div class="highlight"><pre><span></span>kubectl get nodes
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">By default, <code class="docutils literal notranslate"><span class="pre">kubectl</span></code> looks like a file named <code class="docutils literal notranslate"><span class="pre">config</span></code> in the <code class="docutils literal notranslate"><span class="pre">~/.kube</span></code> directory. Other locations can be specified using environment variables or by setting the <code class="docutils literal notranslate"><span class="pre">--kubeconfig</span></code> flag.</p>
+</div>
+</li>
+<li><p class="first">Verify that the output of the last command shows 1 master node and 2 worker nodes as <strong>Ready</strong>.</p>
+</li>
+</ol>
+<div class="section" id="cluster-and-client-version">
+<h3>Cluster and client version<a class="headerlink" href="#cluster-and-client-version" title="Permalink to this headline">¶</a></h3>
+<p>To see the version of the kubernetes client and server run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl version
+</pre></div>
+</div>
+<img alt="../_images/012.png" src="../_images/012.png" />
+</div>
+<div class="section" id="cluster-info">
+<h3>Cluster info<a class="headerlink" href="#cluster-info" title="Permalink to this headline">¶</a></h3>
+<p>To see the information of the kubernetes cluster run:.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl cluster-info
+</pre></div>
+</div>
+<p>This will provide information on where the <strong>Kubernetes Master</strong> is running and the <strong>KubeDNS URL</strong>.</p>
+<img alt="../_images/112.png" src="../_images/112.png" />
+</div>
+<div class="section" id="running-pods">
+<h3>Running pods<a class="headerlink" href="#running-pods" title="Permalink to this headline">¶</a></h3>
+<p>If you are interested in all the pods that are running after the installation of the kubernetes cluster run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl get pods --all-namespaces
+</pre></div>
+</div>
+<img alt="../_images/212.png" src="../_images/212.png" />
+</div>
+</div>
+<div class="section" id="deploying-an-application">
+<h2>Deploying an Application<a class="headerlink" href="#deploying-an-application" title="Permalink to this headline">¶</a></h2>
+<p>Now that you have successfully run commands against your Kubernetes cluster using <code class="docutils literal notranslate"><span class="pre">kubectl</span></code>, you are now ready to deploy an application. In this exercise you will be deploying the popular open-source content management system used for websites and blogs, WordPress.</p>
+<ol class="arabic">
+<li><p class="first">Using your Docker VM create a <strong>wordpress</strong> directory using the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir ~/wordpress
+<span class="nb">cd</span> ~/wordpress
+</pre></div>
+</div>
+<p>Kubernetes depends on YAML files to provision applications and define dependencies. YAML files are a human-readable text-based format for specifying configuration information. This application requires two YAML files to be stored in the <strong>wordpress</strong> directory.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To learn more about Kubernetes application deployment and YAML files, click <a class="reference external" href="https://www.mirantis.com/blog/introduction-to-yaml-creating-a-kubernetes-deployment/">here</a>.</p>
+</div>
+</li>
+<li><p class="first">Using your Docker VM, download the following YAML files for Wordpress and the MySQL deployment used by Wordpress:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget https://kubernetes.io/examples/application/wordpress/mysql-deployment.yaml
+
+wget https://kubernetes.io/examples/application/wordpress/wordpress-deployment.yaml
+</pre></div>
+</div>
+</li>
+<li><p class="first">Open the <strong>wordpress-deployment.yaml</strong> file with <code class="docutils literal notranslate"><span class="pre">nano</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nano wordpress-deployment.yaml
+</pre></div>
+</div>
+</li>
+<li><p class="first">Under <strong>spec: &gt; type:</strong>, change the value from <strong>LoadBalancer</strong> to <strong>NodePort</strong> and save the file. This change is required as Karbon does not yet support LoadBalancer.</p>
+<div class="figure">
+<img alt="../_images/13.png" src="../_images/13.png" />
+</div>
+<p>To save the changes press <code class="docutils literal notranslate"><span class="pre">CTRL</span> <span class="pre">+</span> <span class="pre">X</span></code>, then <code class="docutils literal notranslate"><span class="pre">Y</span></code>, and finally [ENTER]</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can learn more about Kubernetes publishing service types <a class="reference external" href="https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types">here</a>.</p>
+</div>
+</li>
+<li><p class="first">Open the <strong>mysql-deployment.yaml</strong> file and note that it requires an environmental variable to define the <strong>MYSQL_ROOT_PASSWORD</strong> as part of deployment. <strong>No changes are required to this file.</strong></p>
+<div class="figure">
+<img alt="../_images/14.png" src="../_images/14.png" />
+</div>
+<p>Exit with no changes pressing <code class="docutils literal notranslate"><span class="pre">CTRL</span> <span class="pre">+</span> <span class="pre">X</span></code>.</p>
+</li>
+<li><p class="first">Define the <strong>secret</strong> to be used as the MySQL password by running the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl create secret generic mysql-pass --from-literal<span class="o">=</span><span class="nv">password</span><span class="o">=</span>Nutanix/4u!
+</pre></div>
+</div>
+<p>Verify the command returns <code class="docutils literal notranslate"><span class="pre">secret/mysql-pass</span> <span class="pre">created</span></code>.</p>
+<p>You can also verify the secret has been created by running the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl get secrets
+</pre></div>
+</div>
+<p>Verify <strong>mysql-pass</strong> appears in the <strong>NAME</strong> column.</p>
+</li>
+<li><p class="first">You will now provision the MySQL database by running the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl create -f mysql-deployment.yaml
+</pre></div>
+</div>
+<div class="figure">
+<img alt="../_images/15.png" src="../_images/15.png" />
+</div>
+</li>
+<li><p class="first">In addition to the MySQL service, the <strong>mysql-deployment.yaml</strong> also specifies that a persistent volume be created as part of the deployment. You can get additional details about the volume by running:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl get pvc
+</pre></div>
+</div>
+<p>You will note that the <strong>STORAGECLASS</strong> matches the <strong>default-storageclass-</strong><em>Initials</em> provisioned by Karbon.</p>
+<p>The volume also appears in <strong>Karbon</strong> under <em>Initials</em><strong>-karbon &gt; Volume</strong>.</p>
+<div class="figure">
+<img alt="../_images/16.png" src="../_images/16.png" />
+</div>
+</li>
+<li><p class="first">To view all running pods on the cluster, which should currently only be your Wordpress MySQL database, run the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl get pods
+</pre></div>
+</div>
+</li>
+<li><p class="first">To complete the application, deploy Wordpress by running the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl create -f wordpress-deployment.yaml
+</pre></div>
+</div>
+<div class="figure">
+<img alt="../_images/15b.png" src="../_images/15b.png" />
+</div>
+</li>
+<li><p class="first">Verify both pods are displayed as <strong>Running</strong> using <code class="docutils literal notranslate"><span class="pre">kubectl</span> <span class="pre">get</span> <span class="pre">pods</span></code>.</p>
+<div class="figure">
+<img alt="../_images/16b.png" src="../_images/16b.png" />
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="accessing-wordpress">
+<h2>Accessing Wordpress<a class="headerlink" href="#accessing-wordpress" title="Permalink to this headline">¶</a></h2>
+<p>You have confirmed the Wordpress application and its MySQL database are running. Configuration of Wordpress is done via web interface, but to access the web interface you must first determine the IP addresses of our worker VMs and the port on which the pod is running.</p>
+<ol class="arabic">
+<li><p class="first">The IP addresses of all cluster VMs is returned by the <code class="docutils literal notranslate"><span class="pre">kubectl</span> <span class="pre">describe</span> <span class="pre">nodes</span></code> command. You can run this and search for the <strong>InternalIP</strong> of any of your <strong>worker</strong> VMs, or run the following command to return only the hostnames and IP addresses:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl describe nodes <span class="p">|</span> egrep <span class="s1">&#39;Hostname|InternalIP&#39;</span>
+</pre></div>
+</div>
+<div class="figure">
+<img alt="../_images/17.png" src="../_images/17.png" />
+</div>
+</li>
+<li><p class="first">To determine the port number of the Wordpress application, run the following command and note the TCP port mapped to port 80:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl get services wordpress
+</pre></div>
+</div>
+<div class="figure">
+<img alt="../_images/18.png" src="../_images/18.png" />
+</div>
+</li>
+<li><p class="first">Open http://<em>WORKER-VM-IP:WORDPRESS SERVICE PORT</em>/ in a new browser tab to access to Wordpress installation.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In the example shown, you would browse to <a class="reference external" href="http://10.10.56.183:30163">http://10.10.56.183:30163</a>. You environment will have a different IP and port.</p>
+</div>
+<div class="figure">
+<img alt="../_images/19.png" src="../_images/19.png" />
+</div>
+</li>
+<li><p class="first">Click <strong>Continue</strong> and fill out the following fields:</p>
+<ul class="simple">
+<li><strong>Site Title</strong> - <em>Initials</em>’s Karbon Blog</li>
+<li><strong>Username</strong> - admin</li>
+<li><strong>Password</strong> - nutanix/4u</li>
+<li><strong>Your Email</strong> - <a class="reference external" href="mailto:noreply&#37;&#52;&#48;nutanix&#46;com">noreply<span>&#64;</span>nutanix<span>&#46;</span>com</a></li>
+</ul>
+</li>
+<li><p class="first">Click <strong>Install Wordpress</strong>.</p>
+</li>
+<li><p class="first">After setup completes (a few seconds), click <strong>Log In</strong> and provide the credentials just configured.</p>
+<p>Congratulations! Your Wordpress application and MySQL database setup is complete.</p>
+<div class="figure">
+<img alt="../_images/20.png" src="../_images/20.png" />
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="exploring-logging-visualization">
+<h2>Exploring Logging &amp; Visualization<a class="headerlink" href="#exploring-logging-visualization" title="Permalink to this headline">¶</a></h2>
+<p>Karbon provides a plug-in architecture to continually add additional functionality on top of vanilla Kubernetes. The firsts plug-ins Karbon provides are an integrated logging services stack called <strong>EFK</strong>, short for <a class="reference external" href="https://github.com/elastic/elasticsearch">Elasticsearch</a>, <a class="reference external" href="https://www.fluentd.org/">fluentd</a> and <a class="reference external" href="https://github.com/elastic/kibana">Kibana</a>; and monitoring and alerting with Prometheus.</p>
+<p>Elasticsearch is a real-time, distributed, and scalable search engine which allows for full-text and structured search, as well as analytics. It is commonly used to index and search through large volumes of log data, but can also be used to search many different kinds of documents.</p>
+<p>Elasticsearch is commonly deployed alongside Kibana, a powerful data visualization frontend and dashboard for Elasticsearch. Kibana allows you to explore your Elasticsearch log data through a web interface, and build dashboards and queries to quickly answer questions and gain insight into your Kubernetes applications.</p>
+<p>Fluentd is a popular data collector that runs on all Kubernetes nodes to tail container log files, filter and transform the log data, and deliver it to the Elasticsearch cluster, where it will be indexed and stored.</p>
+<ol class="arabic">
+<li><p class="first">Return to the <strong>Karbon Console</strong> and select your <em>Initials</em><strong>-karbon</strong> cluster.</p>
+</li>
+<li><p class="first">Select <strong>Add-on</strong> from the sidebar to view and manage available Karbon plugins.</p>
+<div class="figure">
+<img alt="../_images/21.png" src="../_images/21.png" />
+</div>
+</li>
+<li><p class="first">Select <strong>Logging</strong> to launch the Kibana user interface.</p>
+</li>
+<li><p class="first">Select <strong>Discover</strong> from the sidebar and define <code class="docutils literal notranslate"><span class="pre">*</span></code> as the <strong>Index Pattern</strong>.</p>
+<p>This wildcard will retrieve all available indices within Elastisearch, including <strong>etcd</strong>, <strong>kubernetes</strong>, and <strong>systemd</strong>.</p>
+<div class="figure">
+<img alt="../_images/22.png" src="../_images/22.png" />
+</div>
+</li>
+<li><p class="first">Click <strong>Next Step</strong>.</p>
+</li>
+<li><p class="first">Select <strong>&#64;timestamp</strong> from the <strong>Time Filter field name</strong> drop down menu to allow you to sort logging entries by their respective timestamps.</p>
+</li>
+<li><p class="first">Click <strong>Create index pattern</strong>.</p>
+</li>
+<li><p class="first">Select <strong>Discover</strong> again from the sidebar to view all logs from the Karbon cluster. You can reduce the amount of Kubernetes metadata displayed by adding the <strong>log</strong> entry under <strong>Available Fields</strong>.</p>
+<div class="figure">
+<img alt="../_images/23.png" src="../_images/23.png" />
+</div>
+<p>Advanced Kibana usage, including time series data visualization that can answer questions such as “What is the difference in service error rates between our last 3 application upgrades,” is covered in the <a class="reference external" href="https://www.elastic.co/guide/en/kibana/6.2/index.html">Kibana User Guide</a>.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="coming-soon">
+<h2>Coming Soon!<a class="headerlink" href="#coming-soon" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Upgrades &amp; Patching<ul>
+<li>Non-disruptive Karbon upgrades</li>
+<li>Immutable OS upgrades of all cluster nodes</li>
+</ul>
+</li>
+<li>Support for native <a class="reference external" href="https://kubernetes.io/docs/reference/access-authn-authz/rbac/">Kubernetes RBAC</a></li>
+<li>Darksite Support<ul>
+<li>Local read-only image repository for offline cluster deployments for customers that do not allow internet access</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="takeaways">
+<h2>Takeaways<a class="headerlink" href="#takeaways" title="Permalink to this headline">¶</a></h2>
+<p>What are the key things you should know about <strong>Nutanix Karbon</strong>?</p>
+<ul class="simple">
+<li>Any Nutanix AHV customer is a potential target for Karbon, including:<ul>
+<li>Customers that perform internal development</li>
+<li>Customers who have or plan to adopt CI/CD</li>
+<li>Customers with Digital Transformation or Application Modernization initiatives</li>
+</ul>
+</li>
+<li>The primary benefit of Karbon is reduced CapEX and OpEX of managing and operating Kubernetes environments, reducing learning curve and enabling DevOps/ITOps teams to quickly support their development teams to start deploying containerized workloads.</li>
+<li>Karbon delivers One-Click operations for Kubernetes provisioning and lifecycle management, enabling enterprises to provide a private-cloud Kubernetes solution with the simplicity and performance of public clouds.</li>
+<li>Karbon is included in all AOS software editions at no additional cost.</li>
+<li>Karbon can provide additional functionality to Kubernetes over time through its plugin architecture.</li>
+<li>Karbon is a certified Kubernetes distribution and has passed the <a class="reference external" href="https://landscape.cncf.io/landscape=certified-kubernetes-hosted&amp;selected=nutanix-karbon">Kuberentes Conformance Certification</a>.</li>
+<li>Karbon is listed on the official <a class="reference external" href="https://kubernetes.io/docs/setup/pick-right-solution/">Kubernetes Solutions</a> and <a class="reference external" href="https://landscape.cncf.io/category=certified-kubernetes-hosted&amp;selected=nutanix-karbon">Cloud Native Computing Foundation Landscape</a> pages.</li>
+</ul>
+</div>
+<div class="section" id="additional-kubernetes-training-resources">
+<h2>Additional Kubernetes Training Resources<a class="headerlink" href="#additional-kubernetes-training-resources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.edx.org/course/introduction-to-kubernetes">Introduction to Kubernetes</a> - Free introductory training by The Linux Foundation</li>
+<li><a class="reference external" href="https://training.play-with-kubernetes.com/">Play with Kubernetes</a> - Free introductory training and lab environment by Docker</li>
+<li><a class="reference external" href="https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615">Scalable Microservices with Kubernetes</a> - Free intermediate training by Google</li>
+</ul>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../_sources/karbon/karbon.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019 Nutanix.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
