@@ -9,6 +9,7 @@
   what_is_nutanix/what_is_nutanix
 .. nutanix_terminology/nutanix_terminology
 
+
 .. toctree::
   :maxdepth: 2
   :caption: Nutanix Calm
@@ -142,7 +143,6 @@ For example:
 - **Cluster IP** - 10.21.55.37
 
 Throughout the Bootcamp there are multiple instances where you will need to substitute *XYZ* with the correct octet for your subnet, for example:
-
 .. list-table::
   :widths: 25 75
   :header-rows: 1
